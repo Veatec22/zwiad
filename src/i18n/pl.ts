@@ -77,6 +77,9 @@ const pl = {
     close: 'Zamknij playground',
     loading: 'Ładowanie...',
     groupLabel: 'Kategorie playgroundu',
+    desktopBadge: 'desktop',
+    desktopOnly:
+      'Otwórz na większym ekranie — narzędzia playgroundu wymagają komputera.',
     groups: {
       pocs: 'POCs',
       dashboards: 'Dashboards',

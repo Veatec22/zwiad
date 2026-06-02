@@ -269,6 +269,19 @@ function getInitialTheme(): Theme {
   return 'dark'
 }
 
+function useMediaQuery(query: string) {
+  const [matches, setMatches] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia(query).matches,
+  )
+  useEffect(() => {
+    const mql = window.matchMedia(query)
+    const onChange = () => setMatches(mql.matches)
+    mql.addEventListener('change', onChange)
+    return () => mql.removeEventListener('change', onChange)
+  }, [query])
+  return matches
+}
+
 function App() {
   const { t, i18n } = useTranslation()
   const language = getLanguage(i18n.resolvedLanguage)
@@ -279,6 +292,16 @@ function App() {
     useState<PlaygroundProductId | null>(null)
   const [playgroundGroup, setPlaygroundGroup] =
     useState<PlaygroundGroup>('pocs')
+  const isMobile = useMediaQuery('(max-width: 860px)')
+  const [openAreas, setOpenAreas] = useState<Set<number>>(() => new Set())
+  const toggleArea = useCallback((index: number) => {
+    setOpenAreas((prev) => {
+      const next = new Set(prev)
+      if (next.has(index)) next.delete(index)
+      else next.add(index)
+      return next
+    })
+  }, [])
   const [stackQuery, setStackQuery] = useState('')
   const [stackTypeFilter, setStackTypeFilter] = useState(allStackTypeFilter)
   const [stackProf, setStackProf] = useState(0)
@@ -629,8 +652,18 @@ function App() {
                   const logos: readonly AreaLogoItem[] = areaLogos[index] ?? []
 
                   return (
-                    <article className="area-card" key={item.title}>
-                      <div className="area-card-title">
+                    <article
+                      className={`area-card${
+                        openAreas.has(index) ? ' is-open' : ''
+                      }`}
+                      key={item.title}
+                    >
+                      <button
+                        aria-expanded={openAreas.has(index)}
+                        className="area-card-title"
+                        onClick={() => toggleArea(index)}
+                        type="button"
+                      >
                         <Icon
                           aria-hidden="true"
                           className="area-card-icon"
@@ -638,7 +671,7 @@ function App() {
                           strokeWidth={1.8}
                         />
                         <h3>{item.title}</h3>
-                      </div>
+                      </button>
                       <div className="area-card-reveal">
                         <div className="area-card-reveal-inner">
                           <p>{item.description}</p>
@@ -661,6 +694,9 @@ function App() {
                                         className="area-logo"
                                         src={src}
                                       />
+                                      <span className="area-logo-label">
+                                        {label}
+                                      </span>
                                     </button>
                                   </TooltipTrigger>
                                   <TooltipContent>{label}</TooltipContent>
@@ -705,6 +741,7 @@ function App() {
               </TabsList>
               <TabsContent className="playground-tabs-content" value="pocs">
                 <PlaygroundCarousel
+                  isMobile={isMobile}
                   onSelect={setActiveProductId}
                   products={pocProducts}
                   theme={theme}
@@ -715,6 +752,7 @@ function App() {
                 value="dashboards"
               >
                 <PlaygroundCarousel
+                  isMobile={isMobile}
                   onSelect={setActiveProductId}
                   products={dashboardProducts}
                   theme={theme}
@@ -1016,14 +1054,17 @@ function LogoAsciiPreview({
 }
 
 function PlaygroundCarousel({
+  isMobile,
   onSelect,
   products,
   theme,
 }: {
+  isMobile: boolean
   onSelect: (productId: PlaygroundProductId) => void
   products: PlaygroundProduct[]
   theme: Theme
 }) {
+  const { t } = useTranslation()
   return (
     <Carousel
       className="playground-carousel"
@@ -1037,9 +1078,20 @@ function PlaygroundCarousel({
           <CarouselItem className="playground-carousel-item" key={product.id}>
             <button
               className="playground-card"
-              onClick={() => onSelect(product.id)}
+              onClick={() => {
+                if (isMobile) {
+                  toast(t('playground.desktopOnly'))
+                  return
+                }
+                onSelect(product.id)
+              }}
               type="button"
             >
+              {isMobile ? (
+                <span className="playground-card-desktop-badge">
+                  {t('playground.desktopBadge')}
+                </span>
+              ) : null}
               <PlaygroundPreview product={product} theme={theme} />
               <div className="playground-card-body">
                 <div className="playground-card-title">

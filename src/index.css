@@ -578,10 +578,15 @@ button {
     transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.area-card:hover,
-.area-card:focus-within {
+@media (hover: hover) {
+  .area-card:hover {
+    border-color: var(--fg);
+    transform: translateY(-2px);
+  }
+}
+
+.area-card.is-open {
   border-color: var(--fg);
-  transform: translateY(-2px);
 }
 
 .area-card-reveal {
@@ -598,8 +603,14 @@ button {
   overflow: hidden;
 }
 
-.area-card:hover .area-card-reveal,
-.area-card:focus-within .area-card-reveal {
+@media (hover: hover) {
+  .area-card:hover .area-card-reveal {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+}
+
+.area-card.is-open .area-card-reveal {
   grid-template-rows: 1fr;
   opacity: 1;
 }
@@ -610,10 +621,15 @@ button {
     transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.area-card:hover .area-card-icon,
-.area-card:focus-within .area-card-icon {
+@media (hover: hover) {
+  .area-card:hover .area-card-icon {
+    color: var(--fg);
+    transform: translateY(-1px) scale(1.08);
+  }
+}
+
+.area-card.is-open .area-card-icon {
   color: var(--fg);
-  transform: translateY(-1px) scale(1.08);
 }
 
 .area-card small {
@@ -625,8 +641,16 @@ button {
 
 .area-card-title {
   display: flex;
+  width: 100%;
   align-items: center;
   gap: 10px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
 }
 
 .area-card-icon {
@@ -697,6 +721,28 @@ button {
 .area-logo-chip:hover,
 .area-logo-chip:focus-visible {
   border-color: var(--fg);
+}
+
+.area-logo-label {
+  display: none;
+}
+
+/* On touch (no hover), tooltips don't fire — show the label inline instead. */
+@media (hover: none) {
+  .area-logo-chip {
+    width: auto;
+    padding: 0 11px;
+    gap: 8px;
+    cursor: default;
+  }
+
+  .area-logo-label {
+    display: inline;
+    color: var(--fg-2);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .playground-section {
@@ -780,6 +826,7 @@ button {
 }
 
 .playground-card {
+  position: relative;
   overflow: hidden;
   padding: 0;
   text-align: left;
@@ -787,6 +834,22 @@ button {
     transform 250ms cubic-bezier(0.22, 1, 0.36, 1),
     border-color 250ms ease,
     background 250ms ease;
+}
+
+.playground-card-desktop-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  padding: 2px 7px;
+  border: 0.5px solid var(--border-strong);
+  border-radius: 5px;
+  background: color-mix(in oklab, var(--card) 82%, transparent);
+  color: var(--fg-3);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .playground-card:hover {
@@ -1378,6 +1441,41 @@ button {
   .hero-snapshot,
   .explorer-preview {
     grid-template-columns: 1fr;
+  }
+
+  /* Stack table: fit all three columns (incl. proficiency) without h-scroll. */
+  .stack-table {
+    min-width: 0;
+  }
+
+  .stack-table th,
+  .stack-table td {
+    padding: 8px 8px;
+  }
+
+  .stack-col-name {
+    width: 42%;
+  }
+
+  .stack-col-type {
+    width: 26%;
+  }
+
+  .stack-col-prof {
+    width: 32%;
+  }
+
+  .stack-name {
+    gap: 7px;
+  }
+
+  .dots {
+    gap: 3px;
+  }
+
+  .dots i {
+    width: 6px;
+    height: 6px;
   }
 
   .playground-tabs-list {
