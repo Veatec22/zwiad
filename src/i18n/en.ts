@@ -77,6 +77,9 @@ const en = {
     close: 'Close playground',
     loading: 'Loading...',
     groupLabel: 'Playground categories',
+    desktopBadge: 'desktop',
+    desktopOnly:
+      'Open this on a larger screen — the playground tools need a desktop.',
     groups: {
       pocs: 'POCs',
       dashboards: 'Dashboards',
