@@ -1,0 +1,3418 @@
+[
+  {
+    "word": "aead.decrypt_bytes",
+    "type": "aead",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "aead.decrypt_string",
+    "type": "aead",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "aead.encrypt",
+    "type": "aead",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "deterministic_decrypt_bytes",
+    "type": "aead",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "deterministic_decrypt_string",
+    "type": "aead",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "deterministic_encrypt",
+    "type": "aead",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "keys.add_key_from_raw_bytes",
+    "type": "aead",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "keys.keyset_chain",
+    "type": "aead",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "keys.keyset_from_json",
+    "type": "aead",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "keys.keyset_length",
+    "type": "aead",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "keys.keyset_to_json",
+    "type": "aead",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "keys.new_keyset",
+    "type": "aead",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "keys.new_wrapped_keyset",
+    "type": "aead",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "keys.rewrap_keyset",
+    "type": "aead",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "keys.rotate_keyset",
+    "type": "aead",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "keys.rotate_wrapped_keyset",
+    "type": "aead",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "agg",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "any_value",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "array_agg",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "array_concat_agg",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "avg",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "bit_and",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "bit_or",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "bit_xor",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "count",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "countif",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "grouping",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "logical_and",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "logical_or",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "max",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "max_by",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "min",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "min_by",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "string_agg",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "sum",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "approx_count_distinct",
+    "type": "approx_aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "approx_quantiles",
+    "type": "approx_aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "approx_top_count",
+    "type": "approx_aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "approx_top_sum",
+    "type": "approx_aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "array",
+    "type": "array",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "array_concat",
+    "type": "array",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "array_first",
+    "type": "array",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "array_last",
+    "type": "array",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "array_length",
+    "type": "array",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "array_reverse",
+    "type": "array",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "array_slice",
+    "type": "array",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "array_to_string",
+    "type": "array",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "generate_array",
+    "type": "array",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "generate_date_array",
+    "type": "array",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "generate_timestamp_array",
+    "type": "array",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "bit_count",
+    "type": "bit",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "cast",
+    "type": "conversion",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "parse_bignumeric",
+    "type": "conversion",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "parse_numeric",
+    "type": "conversion",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "safe_cast",
+    "type": "conversion",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "current_date",
+    "type": "date",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "date",
+    "type": "date",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "date_add",
+    "type": "date",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "date_diff",
+    "type": "date",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "date_from_unix_date",
+    "type": "date",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "date_sub",
+    "type": "date",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "date_trunc",
+    "type": "date",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "extract",
+    "type": "date",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "format_date",
+    "type": "date",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "last_day",
+    "type": "date",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "parse_date",
+    "type": "date",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "unix_date",
+    "type": "date",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "current_datetime",
+    "type": "datetime",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "datetime",
+    "type": "datetime",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "datetime_add",
+    "type": "datetime",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "datetime_diff",
+    "type": "datetime",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "datetime_sub",
+    "type": "datetime",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "datetime_trunc",
+    "type": "datetime",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "format_datetime",
+    "type": "datetime",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "parse_datetime",
+    "type": "datetime",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "error",
+    "type": "debug",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "percentile_cont",
+    "type": "dp_aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "external_query",
+    "type": "federated_query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "dlp_deterministic_encrypt",
+    "type": "dlp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "dlp_deterministic_decrypt",
+    "type": "dlp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "dlp_key_chain",
+    "type": "dlp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "destination_node_id",
+    "type": "graph",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "edges",
+    "type": "graph",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "element_id",
+    "type": "graph",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "labels",
+    "type": "graph",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "nodes",
+    "type": "graph",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "path_first",
+    "type": "graph",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "path_last",
+    "type": "graph",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "path_length",
+    "type": "graph",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "source_node_id",
+    "type": "graph",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_angle",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_area",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_asbinary",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_asgeojson",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_astext",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_azimuth",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_boundary",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_boundingbox",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_buffer",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_bufferwithtolerance",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_centroid",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_centroid_agg",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_closestpoint",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_clusterdbscan",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_contains",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_convexhull",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_coveredby",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_covers",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_difference",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_dimension",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_disjoint",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_distance",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_dump",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_dwithin",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_endpoint",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_equals",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_extent",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_exteriorring",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_geogfrom",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_geogfromgeojson",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_geogfromtext",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_geogfromwkb",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_geogpoint",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_geogpointfromgeohash",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_geohash",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_geometrytype",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_hausdorffdistance",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_hausdorffdwithin",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_interiorrings",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_intersection",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_intersects",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_intersectsbox",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_isclosed",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_iscollection",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_isempty",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_isring",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_length",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_lineinterpolatepoint",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_linelocatepoint",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_linesubstring",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_makeline",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_makepolygon",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_makepolygonoriented",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_maxdistance",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_npoints",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_numgeometries",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_numpoints",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_perimeter",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_pointn",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_regionstats",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_simplify",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_snaptogrid",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_startpoint",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_touches",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_union",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_union_agg",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_within",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_x",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "st_y",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "s2_cellidfrompoint",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "s2_coveringcellids",
+    "type": "geography",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "farm_fingerprint",
+    "type": "hash",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "md5",
+    "type": "hash",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "sha1",
+    "type": "hash",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "sha256",
+    "type": "hash",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "sha512",
+    "type": "hash",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "hll_count.extract",
+    "type": "hll",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "hll_count.init",
+    "type": "hll",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "hll_count.merge",
+    "type": "hll",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "hll_count.merge_partial",
+    "type": "hll",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "justify_days",
+    "type": "interval",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "justify_hours",
+    "type": "interval",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "justify_interval",
+    "type": "interval",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "make_interval",
+    "type": "interval",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "bool",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "float64",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "int64",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_array",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_array_append",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_array_insert",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_extract",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_extract_array",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_extract_scalar",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_extract_string_array",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_flatten",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_keys",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_object",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_query",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_query_array",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_remove",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_set",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_strip_nulls",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_type",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_value",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "json_value_array",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "lax_bool",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "lax_float64",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "lax_int64",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "lax_string",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "parse_json",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "string",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "to_json",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "to_json_string",
+    "type": "json",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "kll_quantiles.extract_int64",
+    "type": "kll",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "kll_quantiles.extract_float64",
+    "type": "kll",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "kll_quantiles.extract_point_int64",
+    "type": "kll",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "kll_quantiles.extract_point_float64",
+    "type": "kll",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "kll_quantiles.init_int64",
+    "type": "kll",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "kll_quantiles.init_float64",
+    "type": "kll",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "kll_quantiles.merge_int64",
+    "type": "kll",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "kll_quantiles.merge_float64",
+    "type": "kll",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "kll_quantiles.merge_partial",
+    "type": "kll",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "kll_quantiles.merge_point_int64",
+    "type": "kll",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "kll_quantiles.merge_point_float64",
+    "type": "kll",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "abs",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "acos",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "acosh",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "asin",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "asinh",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "atan",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "atan2",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "atanh",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "cbrt",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "ceil",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "ceiling",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "cos",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "cosh",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "cosine_distance",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "cot",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "coth",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "csc",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "csch",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "div",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "exp",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "euclidean_distance",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "floor",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "greatest",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "ieee_divide",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "is_inf",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "is_nan",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "least",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "ln",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "log",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "log10",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "mod",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "pow",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "power",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "rand",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "range",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "range_bucket",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "round",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "safe_add",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "safe_divide",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "safe_multiply",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "safe_negate",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "safe_subtract",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "sec",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "sech",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "sign",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "sin",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "sinh",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "sqrt",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "tan",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "tanh",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "trunc",
+    "type": "math",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "first_value",
+    "type": "navigation",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "lag",
+    "type": "navigation",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "last_value",
+    "type": "navigation",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "lead",
+    "type": "navigation",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "nth_value",
+    "type": "navigation",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "percentile_disc",
+    "type": "navigation",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "net.host",
+    "type": "net",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "net.ip_from_string",
+    "type": "net",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "net.ip_net_mask",
+    "type": "net",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "net.ip_to_string",
+    "type": "net",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "net.ip_trunc",
+    "type": "net",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "net.ipv4_from_int64",
+    "type": "net",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "net.ipv4_to_int64",
+    "type": "net",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "net.public_suffix",
+    "type": "net",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "net.reg_domain",
+    "type": "net",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "net.safe_ip_from_string",
+    "type": "net",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "cume_dist",
+    "type": "numbering",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "dense_rank",
+    "type": "numbering",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "ntile",
+    "type": "numbering",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "percent_rank",
+    "type": "numbering",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "rank",
+    "type": "numbering",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "row_number",
+    "type": "numbering",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "obj.fetch_metadata",
+    "type": "objectref",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "obj.get_access_url",
+    "type": "objectref",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "obj.get_read_url",
+    "type": "objectref",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "obj.make_ref",
+    "type": "objectref",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "generate_range_array",
+    "type": "range",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "range_contains",
+    "type": "range",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "range_end",
+    "type": "range",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "range_intersect",
+    "type": "range",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "range_overlaps",
+    "type": "range",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "range_sessionize",
+    "type": "range",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "range_start",
+    "type": "range",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "search",
+    "type": "search",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "vector_search",
+    "type": "search",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "session_user",
+    "type": "security",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "corr",
+    "type": "stat_aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "covar_pop",
+    "type": "stat_aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "covar_samp",
+    "type": "stat_aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "stddev",
+    "type": "stat_aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "stddev_pop",
+    "type": "stat_aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "stddev_samp",
+    "type": "stat_aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "var_pop",
+    "type": "stat_aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "var_samp",
+    "type": "stat_aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "variance",
+    "type": "stat_aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "ascii",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "byte_length",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "char_length",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "character_length",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "chr",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "code_points_to_bytes",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "code_points_to_string",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "collate",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "concat",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "contains_substr",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "edit_distance",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "ends_with",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "format",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "from_base32",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "from_base64",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "from_hex",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "initcap",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "instr",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "left",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "length",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "lower",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "lpad",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "ltrim",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "normalize",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "normalize_and_casefold",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "octet_length",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "regexp_contains",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "regexp_extract",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "regexp_extract_all",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "regexp_instr",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "regexp_replace",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "regexp_substr",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "repeat",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "replace",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "reverse",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "right",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "rpad",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "rtrim",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "safe_convert_bytes_to_string",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "soundex",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "split",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "starts_with",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "strpos",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "substr",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "substring",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "to_base32",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "to_base64",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "to_code_points",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "to_hex",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "translate",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "trim",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "unicode",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "upper",
+    "type": "string",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "external_object_transform",
+    "type": "table",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "bag_of_words",
+    "type": "text",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "text_analyze",
+    "type": "text",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "tf_idf",
+    "type": "text",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "current_time",
+    "type": "time",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "format_time",
+    "type": "time",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "parse_time",
+    "type": "time",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "time",
+    "type": "time",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "time_add",
+    "type": "time",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "time_diff",
+    "type": "time",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "time_sub",
+    "type": "time",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "time_trunc",
+    "type": "time",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "appends",
+    "type": "time_series",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "changes",
+    "type": "time_series",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "date_bucket",
+    "type": "time_series",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "datetime_bucket",
+    "type": "time_series",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "gap_fill",
+    "type": "time_series",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "timestamp_bucket",
+    "type": "time_series",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "current_timestamp",
+    "type": "timestamp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "format_timestamp",
+    "type": "timestamp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "parse_timestamp",
+    "type": "timestamp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "timestamp",
+    "type": "timestamp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "timestamp_add",
+    "type": "timestamp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "timestamp_diff",
+    "type": "timestamp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "timestamp_micros",
+    "type": "timestamp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "timestamp_millis",
+    "type": "timestamp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "timestamp_seconds",
+    "type": "timestamp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "timestamp_sub",
+    "type": "timestamp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "timestamp_trunc",
+    "type": "timestamp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "unix_micros",
+    "type": "timestamp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "unix_millis",
+    "type": "timestamp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "unix_seconds",
+    "type": "timestamp",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "generate_uuid",
+    "type": "utility",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "typeof",
+    "type": "utility",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "vector_index.statistics",
+    "type": "vector_index",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "select",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "from",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "where",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "as",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "all",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "distinct",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "select all",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "select distinct",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "select as struct",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "select as value",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "select except",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "select replace",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "select expression",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "expression star",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "with",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "with recursive",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "recursive",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "cte",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "non recursive cte",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "recursive cte",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "subquery",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "value table",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "range variable",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "alias",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "explicit alias",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "implicit alias",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "join",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "inner join",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "cross join",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "comma cross join",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "full join",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "full outer join",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "left join",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "left outer join",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "right join",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "right outer join",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "correlated join",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "on",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "using",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "unnest",
+    "type": "from",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "explicit unnest",
+    "type": "from",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "implicit unnest",
+    "type": "from",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "pivot",
+    "type": "from",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "unpivot",
+    "type": "from",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "tablesample",
+    "type": "from",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "graph_table",
+    "type": "from",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "table function",
+    "type": "from",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "table function call",
+    "type": "from",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "match_recognize",
+    "type": "pattern",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "measures",
+    "type": "pattern",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "pattern",
+    "type": "pattern",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "define",
+    "type": "pattern",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "after match skip",
+    "type": "pattern",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "match disambiguation",
+    "type": "pattern",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "partition by",
+    "type": "window",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "order by",
+    "type": "order",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "qualify",
+    "type": "window",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "window",
+    "type": "window",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "group by",
+    "type": "group",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "group by all",
+    "type": "group",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "grouping sets",
+    "type": "group",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "rollup",
+    "type": "group",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "cube",
+    "type": "group",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "having",
+    "type": "group",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "aggregation_threshold",
+    "type": "aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "differential privacy",
+    "type": "dp_aggregate",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "limit",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "offset",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "limit offset",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "asc",
+    "type": "order",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "desc",
+    "type": "order",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "nulls first",
+    "type": "order",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "nulls last",
+    "type": "order",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "union",
+    "type": "set",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "union all",
+    "type": "set",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "union distinct",
+    "type": "set",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "intersect",
+    "type": "set",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "intersect distinct",
+    "type": "set",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "except distinct",
+    "type": "set",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "set operation",
+    "type": "set",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "set operator",
+    "type": "set",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "except",
+    "type": "set",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "group",
+    "type": "group",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "order",
+    "type": "order",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "partition",
+    "type": "window",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "inner",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "cross",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "full",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "outer",
+    "type": "join",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  },
+  {
+    "word": "by",
+    "type": "query",
+    "difficulty": 1,
+    "unlock_score": 0,
+    "active": true
+  }
+]

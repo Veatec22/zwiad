@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SQL RUSH</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background: #000;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+      }
+
+      #pyxel-screen {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        background: #000;
+      }
+
+      pyxel-run {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #000;
+      }
+
+      pyxel-run canvas,
+      canvas {
+        width: min(100vw, calc(100vh * 16 / 9)) !important;
+        height: min(100vh, calc(100vw * 9 / 16)) !important;
+        image-rendering: pixelated;
+      }
+
+      #pyxel-logo,
+      img#pyxel-logo {
+        display: none !important;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/kitao/pyxel/wasm/pyxel.js"></script>
+  </head>
+  <body>
+    <div id="pyxel-screen"></div>
+    <script>
+      async function bootSqlRush() {
+        const screen = document.getElementById('pyxel-screen')
+        const response = await fetch('./sql_rush_words.json')
+
+        if (!response.ok) {
+          throw new Error('SQL Rush words request failed')
+        }
+
+        window.SQL_RUSH_WORDS = await response.json()
+        screen.remove()
+
+        const runner = document.createElement('pyxel-run')
+        runner.setAttribute('root', '.')
+        runner.setAttribute('name', 'sql_rush.py')
+        document.body.appendChild(runner)
+
+        const scaleCanvas = () => {
+          const canvases = [
+            ...document.querySelectorAll('canvas'),
+            ...[...document.querySelectorAll('pyxel-run')].flatMap((element) =>
+              element.shadowRoot
+                ? [...element.shadowRoot.querySelectorAll('canvas')]
+                : [],
+            ),
+          ]
+
+          if (canvases.length === 0) {
+            window.requestAnimationFrame(scaleCanvas)
+            return
+          }
+
+          canvases.forEach((canvas) => {
+            canvas.style.width = 'min(100vw, calc(100vh * 16 / 9))'
+            canvas.style.height = 'min(100vh, calc(100vw * 9 / 16))'
+            canvas.style.imageRendering = 'pixelated'
+          })
+        }
+
+        scaleCanvas()
+        window.addEventListener('resize', scaleCanvas)
+      }
+
+      bootSqlRush().catch((error) => {
+        const screen = document.getElementById('pyxel-screen')
+        screen.textContent = error.message
+        screen.style.color = '#d4d4d8'
+        screen.style.font = '12px monospace'
+      })
+    </script>
+  </body>
+</html>

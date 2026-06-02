@@ -1,0 +1,75 @@
+import type { StyleOptionDefinition } from './types'
+
+export const commonLabelOptions: StyleOptionDefinition[] = [
+  {
+    id: 'showLabels',
+    labelKey: 'style.showLabels',
+    type: 'toggle',
+    defaultValue: true,
+    tab: 'style',
+    group: 'labels',
+    order: 200,
+  },
+  {
+    id: 'labelFontSize',
+    labelKey: 'style.labelFontSize',
+    type: 'slider',
+    defaultValue: 12,
+    min: 8,
+    max: 24,
+    step: 1,
+    tab: 'style',
+    group: 'labels',
+    order: 201,
+  },
+  {
+    id: 'labelColor',
+    labelKey: 'style.labelColor',
+    type: 'color',
+    defaultValue: 'hsl(var(--foreground))',
+    tab: 'style',
+    group: 'labels',
+    order: 202,
+  },
+  {
+    id: 'labelBold',
+    labelKey: 'style.labelBold',
+    type: 'toggle',
+    defaultValue: false,
+    tab: 'style',
+    group: 'labels',
+    order: 203,
+  },
+  {
+    id: 'labelItalic',
+    labelKey: 'style.labelItalic',
+    type: 'toggle',
+    defaultValue: false,
+    tab: 'style',
+    group: 'labels',
+    order: 204,
+  },
+  {
+    id: 'labelUnderline',
+    labelKey: 'style.labelUnderline',
+    type: 'toggle',
+    defaultValue: false,
+    tab: 'style',
+    group: 'labels',
+    order: 205,
+  },
+  {
+    id: 'labelPosition',
+    labelKey: 'style.labelPosition',
+    type: 'select', // Handled manually in LabelSection
+    defaultValue: 'top', // Default for bars. For pies it handles logic differently.
+    options: [
+      { value: 'top', labelKey: 'style.positionTop' },
+      { value: 'inside', labelKey: 'style.positionInside' },
+      { value: 'insideBottom', labelKey: 'style.positionBottom' },
+    ],
+    tab: 'style',
+    group: 'labels',
+    order: 206,
+  },
+]

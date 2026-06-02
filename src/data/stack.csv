@@ -1,0 +1,33 @@
+name,type,prof
+Airflow,data,3
+dbt,data,5
+BigQuery,data,5
+Dataform,data,4
+DuckDB,data,3
+PostgreSQL,data,4
+scikit-learn,ml,4
+Vertex AI,ml,4
+Kubeflow,ml,5
+AutoGluon,ml,4
+Evidently,ml,3
+SHAP,ml,4
+Streamlit,ml,5
+Cloud Run,cloud,4
+Cloud Functions,cloud,5
+Pub/Sub,cloud,3
+Terraform,cloud,3
+Docker,cloud,3
+Supabase,cloud,4
+Modal,cloud,3
+Tableau,bi,5
+Looker Studio,bi,4
+Power BI,bi,3
+Figma,bi,2
+JavaScript,frontend,3
+TypeScript,frontend,3
+React,frontend,3
+Tauri,frontend,2
+Playwright,frontend,2
+FastAPI,backend,3
+Google ADK,backend,3
+Python,backend,4
