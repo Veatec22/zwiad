@@ -28,7 +28,7 @@ import {
   useRef,
   useState,
 } from 'react'
-import { useTranslation } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 import { toast } from 'sonner'
 import GithubLogo from '@/assets/logos/github.svg?react'
 import logoMark from '@/assets/logos/logo.png'
@@ -616,6 +616,18 @@ function App() {
                 <span>{t('hero.title.1')}</span>
               </h1>
               <p>{t('hero.lead')}</p>
+              <div className="hero-quote">
+                <span className="hero-quote-word">{t('hero.quote.word')}</span>
+                {t('hero.quote.translation') ? (
+                  <span className="hero-quote-translation">
+                    {t('hero.quote.translation')}
+                  </span>
+                ) : null}
+                <span className="hero-quote-pos">{t('hero.quote.pos')}</span>
+                <span className="hero-quote-senses">
+                  {t('hero.quote.senses')}
+                </span>
+              </div>
             </div>
             <aside
               className="hero-snapshot"
@@ -903,6 +915,12 @@ function App() {
             <div className="contact-card">
               <div className="eyebrow">{t('contact.eyebrow')}</div>
               <h2>{t('contact.title')}</h2>
+              <p className="contact-lead">
+                <Trans
+                  components={{ z: <em className="zwiad-word" /> }}
+                  i18nKey="contact.lead"
+                />
+              </p>
               <div className="contact-actions">
                 <button
                   className="site-button primary"
@@ -1097,7 +1115,7 @@ function PlaygroundCarousel({
                 <div className="playground-card-title">
                   <h3>{product.title}</h3>
                   <div className="playground-card-tags">
-                    {product.meta.split(' Â· ').map((tag) => (
+                    {product.meta.split(' · ').map((tag) => (
                       <span className="site-tag" key={tag}>
                         {tag}
                       </span>

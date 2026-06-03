@@ -465,6 +465,43 @@ button {
   font-size: 14px;
 }
 
+.hero-quote {
+  display: flex;
+  max-width: 640px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 0.5px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.01em;
+}
+
+.hero-quote-word {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.hero-quote-translation {
+  color: var(--fg-4);
+}
+
+.zwiad-word {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.hero-quote-pos {
+  color: var(--fg-4);
+  font-style: italic;
+}
+
+.hero-quote-senses {
+  color: var(--fg-3);
+}
+
 .hero-snapshot {
   display: grid;
   border: 0.5px solid var(--border);

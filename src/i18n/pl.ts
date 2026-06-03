@@ -9,6 +9,12 @@ const pl = {
     eyebrow: 'O mnie',
     title: ['Z danych buduję', 'działające aplikacje.'],
     lead: 'Inżynier danych dostarczający rozwiązania end-to-end. Specjalizuję się w SQL, potokach danych, BI i tabelarycznym ML, a efekt dowożę jako gotową aplikację — na GCP, Supabase lub w architekturze serverless.',
+    quote: {
+      word: 'zwiad',
+      translation: '',
+      pos: 'rzecz.',
+      senses: 'rozpoznanie terenu · zbieranie informacji',
+    },
     primary: 'zobacz playground',
     secondary: 'napisz do mnie',
     available: 'available · Q3 2026',
@@ -137,6 +143,7 @@ const pl = {
   contact: {
     eyebrow: 'kontakt',
     title: 'Napisz do mnie.',
+    lead: 'Zróbmy <z>zwiad</z> w Twojej firmie.',
     email: 'contact@zwiad.com',
     copied: 'skopiowano',
     copyError: 'błąd kopiowania',
