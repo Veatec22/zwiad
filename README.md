@@ -1,4 +1,4 @@
-# zagiel.dev
+# zwiad.com
 
 Frontend portfolio built with React + Vite. The site combines classic portfolio sections with an interactive playground.
 

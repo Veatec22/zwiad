@@ -9,6 +9,12 @@ const en = {
     eyebrow: 'About me',
     title: ['I build working apps', 'on a data core.'],
     lead: 'Data engineer delivering end-to-end solutions. I specialize in SQL, data pipelines, BI and tabular ML, then ship the result as a production-ready app on GCP, Supabase or serverless.',
+    quote: {
+      word: 'zwiad',
+      translation: '(reconnaissance)',
+      pos: 'noun',
+      senses: 'surveying the terrain · gathering intel',
+    },
     primary: 'see playground',
     secondary: 'get in touch',
     available: 'available · Q3 2026',
@@ -137,6 +143,7 @@ const en = {
   contact: {
     eyebrow: 'contact',
     title: 'Get in touch.',
+    lead: "Let's run <z>zwiad</z> in your company.",
     email: 'contact@zwiad.com',
     copied: 'copied',
     copyError: 'copy failed',
