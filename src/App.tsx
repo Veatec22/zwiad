@@ -31,7 +31,7 @@ import {
 import { Trans, useTranslation } from 'react-i18next'
 import { toast } from 'sonner'
 import GithubLogo from '@/assets/logos/github.svg?react'
-import logoMark from '@/assets/logos/logo.png'
+import BrandLogo from '@/assets/logos/logo.svg?react'
 import biwaveLogo from '@/assets/logos/playground/biwave.png'
 import maelLogo from '@/assets/logos/playground/mael.png'
 import sailorLogo from '@/assets/logos/playground/sailor.png'
@@ -534,12 +534,7 @@ function App() {
               goToSection('top')
             }}
           >
-            <img
-              alt=""
-              aria-hidden="true"
-              className="brand-mark"
-              src={logoMark}
-            />
+            <BrandLogo aria-hidden="true" className="brand-mark" />
           </a>
 
           <nav aria-label="Main navigation" className="nav-links" ref={navRef}>
@@ -1025,12 +1020,7 @@ function PlaygroundPreview({
 
   return (
     <LogoAsciiPreview theme={theme}>
-      <img
-        alt=""
-        aria-hidden="true"
-        className="playground-logo-mark"
-        src={logoMark}
-      />
+      <BrandLogo aria-hidden="true" className="playground-logo-mark" />
     </LogoAsciiPreview>
   )
 }
