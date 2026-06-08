@@ -1,14 +1,14 @@
 import { useEffect, useRef } from 'react'
 
-import type { TableauReport } from './tableauReports'
+import type { TableauReportEmbed } from './tableauReports'
 
 interface TableauEmbedProps {
-  report: TableauReport
+  report: TableauReportEmbed
 }
 
 const tableauScriptSrc = 'https://public.tableau.com/javascripts/api/viz_v1.js'
 
-function getVizHeight(report: TableauReport, width: number) {
+function getVizHeight(report: TableauReportEmbed, width: number) {
   if (width <= 520) {
     return Math.min(report.mobileHeight, 900)
   }
@@ -72,8 +72,14 @@ export function TableauEmbed({ report }: TableauEmbedProps) {
       <object className="tableauViz" ref={vizRef} style={{ display: 'none' }}>
         <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
         <param name="embed_code_version" value="3" />
-        <param name="site_root" value="" />
-        <param name="name" value={report.name} />
+        {'path' in report ? (
+          <param name="path" value={report.path} />
+        ) : (
+          <>
+            <param name="site_root" value="" />
+            <param name="name" value={report.name} />
+          </>
+        )}
         <param name="tabs" value="no" />
         <param name="toolbar" value="yes" />
         <param name="static_image" value={report.staticImage} />

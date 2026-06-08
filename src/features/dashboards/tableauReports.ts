@@ -2,7 +2,6 @@ export interface TableauReport {
   id: string
   title: string
   description: string
-  name: string
   staticImage: string
   previewImage: string
   desktopWidth: number
@@ -11,6 +10,18 @@ export interface TableauReport {
   tags: string[]
   publishedUrl: string
 }
+
+interface NamedTableauReport extends TableauReport {
+  name: string
+  path?: never
+}
+
+interface SharedTableauReport extends TableauReport {
+  name?: never
+  path: string
+}
+
+export type TableauReportEmbed = NamedTableauReport | SharedTableauReport
 
 export const tableauReports = [
   {
@@ -47,4 +58,20 @@ export const tableauReports = [
     publishedUrl:
       'https://public.tableau.com/views/videogames_17630721405370/VideoGamesSales?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link',
   },
-] satisfies TableauReport[]
+  {
+    id: 'tv-shows',
+    title: 'TV Shows',
+    description: 'Public Tableau dashboard exploring TV shows data.',
+    path: 'shared/TFPC3DGHB',
+    staticImage:
+      'https://public.tableau.com/static/images/TF/TFPC3DGHB/1.png',
+    previewImage:
+      'https://public.tableau.com/static/images/TF/TFPC3DGHB/1_rss.png',
+    desktopWidth: 1600,
+    desktopHeight: 950,
+    mobileHeight: 2000,
+    tags: ['Tableau', 'Dashboard', 'TV Shows'],
+    publishedUrl:
+      'https://public.tableau.com/shared/TFPC3DGHB?:display_count=n&:origin=viz_share_link',
+  },
+] satisfies TableauReportEmbed[]

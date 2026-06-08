@@ -94,7 +94,7 @@ import {
 import stackCsv from '@/data/stack.csv?raw'
 import { TableauDashboardCard } from '@/features/dashboards/TableauGalleryCard'
 import {
-  type TableauReport,
+  type TableauReportEmbed,
   tableauReports,
 } from '@/features/dashboards/tableauReports'
 import { SqlRushCard } from '@/features/playground/sql-rush/SqlRushCard'
@@ -594,6 +594,15 @@ function App() {
               target="_blank"
             >
               <GithubLogo aria-hidden="true" className="github-mark" />
+            </a>
+            <a
+              aria-label="Tableau Public"
+              className="icon-button"
+              href="https://public.tableau.com/app/profile/veatec/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img alt="" className="tableau-mark" src={tableauLogo} />
             </a>
           </div>
         </div>
@@ -1176,7 +1185,7 @@ function PlaygroundModal({
   loadingLabel: string
   onClose: () => void
   product: PlaygroundProduct
-  tableauReport?: TableauReport | null
+  tableauReport?: TableauReportEmbed | null
 }) {
   const [isFullscreen, setIsFullscreen] = useState(false)
 

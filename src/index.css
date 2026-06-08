@@ -173,8 +173,18 @@ button {
   filter: invert(1);
 }
 
+.tableau-mark {
+  width: 15px;
+  height: 15px;
+  filter: brightness(0) invert(1);
+}
+
 :root[data-theme="light"] .github-mark {
   filter: none;
+}
+
+:root[data-theme="light"] .tableau-mark {
+  filter: brightness(0);
 }
 
 .site-tag,

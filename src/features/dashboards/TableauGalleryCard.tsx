@@ -1,8 +1,8 @@
 import { TableauEmbed } from './TableauEmbed'
-import { tableauReports, type TableauReport } from './tableauReports'
+import { tableauReports, type TableauReportEmbed } from './tableauReports'
 
 interface TableauDashboardCardProps {
-  report: TableauReport
+  report: TableauReportEmbed
 }
 
 export function TableauDashboardCard({ report }: TableauDashboardCardProps) {
