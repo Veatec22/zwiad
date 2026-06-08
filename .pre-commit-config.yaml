@@ -1,0 +1,39 @@
+repos:
+  - repo: local
+    hooks:
+      - id: biome-format
+        name: Format frontend files with Biome
+        entry: bun x biome format --write
+        language: system
+        files: \.(css|js|jsx|json|ts|tsx)$
+
+      - id: ruff-fix
+        name: Fix Python lint issues with Ruff
+        entry: uvx ruff check --fix
+        language: system
+        files: ^public/.*\.py$
+
+      - id: ruff-format
+        name: Format Python files with Ruff
+        entry: uvx ruff format
+        language: system
+        files: ^public/.*\.py$
+
+      - id: typecheck
+        name: Typecheck TypeScript
+        entry: bun run typecheck
+        language: system
+        always_run: true
+        pass_filenames: false
+
+      - id: eslint
+        name: Lint staged TypeScript and React files
+        entry: bun x eslint --max-warnings=0
+        language: system
+        files: \.(ts|tsx)$
+
+      - id: ruff-check
+        name: Check staged Python lint issues with Ruff
+        entry: uvx ruff check
+        language: system
+        files: ^public/.*\.py$
