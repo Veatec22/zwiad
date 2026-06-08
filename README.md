@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/logo.png" alt="zwiad logo" width="96" />
+</p>
+
 # zwiad.com
 
 Frontend portfolio built with React + Vite. The site combines classic portfolio sections with an interactive playground.
@@ -43,6 +47,27 @@ Basic repository check:
 ```bash
 bun run check
 ```
+
+The same common tasks are available through `make`:
+
+```bash
+make install
+make dev
+make check
+make test-all
+make build
+```
+
+Pre-commit hooks can be installed with:
+
+```bash
+make precommit-install
+```
+
+The Makefile runs pre-commit through `uvx pre-commit`. The hook runs the
+repository formatters and fixers first. If they change files during a commit,
+the commit is blocked and the fixes are left unstaged; stage the generated
+changes and commit again.
 
 No environment variables are required to run the app. The `sailor` AI assistant
 is bring-your-own-key: you connect your own OpenRouter key (OAuth/PKCE, stored in
