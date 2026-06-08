@@ -63,8 +63,7 @@ export const tableauReports = [
     title: 'TV Shows',
     description: 'Public Tableau dashboard exploring TV shows data.',
     path: 'shared/TFPC3DGHB',
-    staticImage:
-      'https://public.tableau.com/static/images/TF/TFPC3DGHB/1.png',
+    staticImage: 'https://public.tableau.com/static/images/TF/TFPC3DGHB/1.png',
     previewImage:
       'https://public.tableau.com/static/images/TF/TFPC3DGHB/1_rss.png',
     desktopWidth: 1600,
