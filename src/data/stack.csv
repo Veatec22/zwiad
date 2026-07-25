@@ -1,5 +1,6 @@
 name,type,prof
 Airflow,data,3
+Cosmos,data,3
 dbt,data,5
 BigQuery,data,5
 Dataform,data,4

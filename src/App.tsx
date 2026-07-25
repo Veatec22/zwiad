@@ -54,6 +54,7 @@ import supabaseLogo from '@/assets/logos/stack/cloud/supabase.svg'
 import terraformLogo from '@/assets/logos/stack/cloud/terraform.svg'
 import airflowLogo from '@/assets/logos/stack/de/airflow.svg'
 import bigQueryLogo from '@/assets/logos/stack/de/bigquery.svg'
+import cosmosLogo from '@/assets/logos/stack/de/cosmos.svg'
 import dataformLogo from '@/assets/logos/stack/de/dataform.png'
 import dbtLogo from '@/assets/logos/stack/de/dbt.svg'
 import postgresLogo from '@/assets/logos/stack/de/postgresql.svg'
@@ -188,6 +189,7 @@ const allStackTypeFilter = 'all'
 const areaLogos = [
   [
     { label: 'Airflow', src: airflowLogo },
+    { label: 'Cosmos', src: cosmosLogo },
     { label: 'dbt', src: dbtLogo },
     { label: 'BigQuery', src: bigQueryLogo },
     { label: 'Dataform', src: dataformLogo },
