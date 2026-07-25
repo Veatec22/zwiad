@@ -1,5 +1,6 @@
 name,type,prof
 Airflow,data,3
+Cosmos,data,3
 dbt,data,5
 BigQuery,data,5
 Dataform,data,4
@@ -17,6 +18,7 @@ Cloud Functions,cloud,5
 Pub/Sub,cloud,3
 Terraform,cloud,3
 Docker,cloud,3
+ngrok,cloud,2
 Supabase,cloud,4
 Modal,cloud,3
 Tableau,bi,5
@@ -30,4 +32,5 @@ Tauri,frontend,2
 Playwright,frontend,2
 FastAPI,backend,3
 Google ADK,backend,3
+Resend,backend,2
 Python,backend,4

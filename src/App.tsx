@@ -40,6 +40,7 @@ import adkLogo from '@/assets/logos/stack/backend/adk.png'
 import duckDbLogo from '@/assets/logos/stack/backend/duckdb.svg'
 import fastApiLogo from '@/assets/logos/stack/backend/fastapi.svg'
 import pythonLogo from '@/assets/logos/stack/backend/python.svg'
+import resendLogo from '@/assets/logos/stack/backend/resend.svg'
 import streamlitLogo from '@/assets/logos/stack/ml/streamlit.svg'
 import dataStudioLogo from '@/assets/logos/stack/bi/datastudio.svg'
 import figmaLogo from '@/assets/logos/stack/bi/figma.svg'
@@ -49,11 +50,13 @@ import cloudFunctionsLogo from '@/assets/logos/stack/cloud/cloudfunctions.svg'
 import cloudRunLogo from '@/assets/logos/stack/cloud/cloudrun.svg'
 import dockerLogo from '@/assets/logos/stack/cloud/docker.svg'
 import modalLogo from '@/assets/logos/stack/cloud/modal.svg'
+import ngrokLogo from '@/assets/logos/stack/cloud/ngrok.svg'
 import pubSubLogo from '@/assets/logos/stack/cloud/pubsub.svg'
 import supabaseLogo from '@/assets/logos/stack/cloud/supabase.svg'
 import terraformLogo from '@/assets/logos/stack/cloud/terraform.svg'
 import airflowLogo from '@/assets/logos/stack/de/airflow.svg'
 import bigQueryLogo from '@/assets/logos/stack/de/bigquery.svg'
+import cosmosLogo from '@/assets/logos/stack/de/cosmos.svg'
 import dataformLogo from '@/assets/logos/stack/de/dataform.png'
 import dbtLogo from '@/assets/logos/stack/de/dbt.svg'
 import postgresLogo from '@/assets/logos/stack/de/postgresql.svg'
@@ -185,9 +188,11 @@ const heroSnapshotIcons = {
 
 const stackRows = parseStackCsv(stackCsv)
 const allStackTypeFilter = 'all'
+const tonalLogoNames = new Set(['Airflow', 'Cosmos', 'PostgreSQL'])
 const areaLogos = [
   [
     { label: 'Airflow', src: airflowLogo },
+    { label: 'Cosmos', src: cosmosLogo },
     { label: 'dbt', src: dbtLogo },
     { label: 'BigQuery', src: bigQueryLogo },
     { label: 'Dataform', src: dataformLogo },
@@ -209,6 +214,7 @@ const areaLogos = [
     { label: 'Pub/Sub', src: pubSubLogo },
     { label: 'Terraform', src: terraformLogo },
     { label: 'Docker', src: dockerLogo },
+    { label: 'ngrok', src: ngrokLogo },
     { label: 'Supabase', src: supabaseLogo },
     { label: 'Modal', src: modalLogo },
   ],
@@ -228,6 +234,7 @@ const areaLogos = [
   [
     { label: 'FastAPI', src: fastApiLogo },
     { label: 'Google ADK', src: adkLogo },
+    { label: 'Resend', src: resendLogo },
     { label: 'Python', src: pythonLogo },
   ],
 ] as const satisfies readonly AreaLogoItem[][]
@@ -707,7 +714,11 @@ function App() {
                                       <img
                                         alt=""
                                         aria-hidden="true"
-                                        className="area-logo"
+                                        className={`area-logo ${
+                                          tonalLogoNames.has(label)
+                                            ? 'tonal-logo'
+                                            : ''
+                                        }`}
                                         src={src}
                                       />
                                       <span className="area-logo-label">
@@ -884,7 +895,11 @@ function App() {
                               <img
                                 alt=""
                                 aria-hidden="true"
-                                className="stack-logo"
+                                className={`stack-logo ${
+                                  tonalLogoNames.has(row.name)
+                                    ? 'tonal-logo'
+                                    : ''
+                                }`}
                                 src={stackLogoByName.get(row.name)}
                               />
                             ) : null}

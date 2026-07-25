@@ -1192,6 +1192,11 @@ button {
   opacity: 0.86;
 }
 
+.area-logo.tonal-logo,
+.stack-logo.tonal-logo {
+  filter: grayscale(1);
+}
+
 .stack-table th.align-right,
 .stack-table td.numeric-cell {
   text-align: right;
