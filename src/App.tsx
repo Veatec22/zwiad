@@ -40,6 +40,7 @@ import adkLogo from '@/assets/logos/stack/backend/adk.png'
 import duckDbLogo from '@/assets/logos/stack/backend/duckdb.svg'
 import fastApiLogo from '@/assets/logos/stack/backend/fastapi.svg'
 import pythonLogo from '@/assets/logos/stack/backend/python.svg'
+import resendLogo from '@/assets/logos/stack/backend/resend.svg'
 import streamlitLogo from '@/assets/logos/stack/ml/streamlit.svg'
 import dataStudioLogo from '@/assets/logos/stack/bi/datastudio.svg'
 import figmaLogo from '@/assets/logos/stack/bi/figma.svg'
@@ -49,6 +50,7 @@ import cloudFunctionsLogo from '@/assets/logos/stack/cloud/cloudfunctions.svg'
 import cloudRunLogo from '@/assets/logos/stack/cloud/cloudrun.svg'
 import dockerLogo from '@/assets/logos/stack/cloud/docker.svg'
 import modalLogo from '@/assets/logos/stack/cloud/modal.svg'
+import ngrokLogo from '@/assets/logos/stack/cloud/ngrok.svg'
 import pubSubLogo from '@/assets/logos/stack/cloud/pubsub.svg'
 import supabaseLogo from '@/assets/logos/stack/cloud/supabase.svg'
 import terraformLogo from '@/assets/logos/stack/cloud/terraform.svg'
@@ -212,6 +214,7 @@ const areaLogos = [
     { label: 'Pub/Sub', src: pubSubLogo },
     { label: 'Terraform', src: terraformLogo },
     { label: 'Docker', src: dockerLogo },
+    { label: 'ngrok', src: ngrokLogo },
     { label: 'Supabase', src: supabaseLogo },
     { label: 'Modal', src: modalLogo },
   ],
@@ -231,6 +234,7 @@ const areaLogos = [
   [
     { label: 'FastAPI', src: fastApiLogo },
     { label: 'Google ADK', src: adkLogo },
+    { label: 'Resend', src: resendLogo },
     { label: 'Python', src: pythonLogo },
   ],
 ] as const satisfies readonly AreaLogoItem[][]
