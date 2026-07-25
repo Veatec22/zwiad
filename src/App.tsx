@@ -186,6 +186,7 @@ const heroSnapshotIcons = {
 
 const stackRows = parseStackCsv(stackCsv)
 const allStackTypeFilter = 'all'
+const tonalLogoNames = new Set(['Airflow', 'Cosmos', 'PostgreSQL'])
 const areaLogos = [
   [
     { label: 'Airflow', src: airflowLogo },
@@ -709,7 +710,11 @@ function App() {
                                       <img
                                         alt=""
                                         aria-hidden="true"
-                                        className="area-logo"
+                                        className={`area-logo ${
+                                          tonalLogoNames.has(label)
+                                            ? 'tonal-logo'
+                                            : ''
+                                        }`}
                                         src={src}
                                       />
                                       <span className="area-logo-label">
@@ -886,7 +891,11 @@ function App() {
                               <img
                                 alt=""
                                 aria-hidden="true"
-                                className="stack-logo"
+                                className={`stack-logo ${
+                                  tonalLogoNames.has(row.name)
+                                    ? 'tonal-logo'
+                                    : ''
+                                }`}
                                 src={stackLogoByName.get(row.name)}
                               />
                             ) : null}
